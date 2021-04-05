@@ -2,3 +2,66 @@ body
     background-color: #1B065E
     font-family: sans-serif
     margin: 0
+
+.card
+    background-color: #EAECE9
+    width: 60%
+    height: 450px
+    display: flex
+    margin: 2em auto
+.card-left
+    width: 20%
+    display: flex
+    align-items: flex-start //puse logo arriba (main axis horizontal)
+    background-color: #141613
+    justify-content: center
+    padding:  0.5rem 0
+    img
+        max-width: 80%
+
+.card-right
+    width: 80%
+    padding: 0 1rem
+    .title
+        margin: 1rem 0
+    .form
+        display: flex
+        flex-direction: column
+        //align-items: flex-start //puse formulario a la izq (main axis vertical)
+        justify-content: space-between //distribuidos mismo espacio vertical
+        height: 350px
+        .form-field
+            display: flex
+            flex-direction: column //etiquetas por encima campos por debajo
+            // margin-right: 13rem
+        .form-names
+            display: flex //name and lastname in the same direction
+            justify-content: space-between
+            .form-input
+                width: 300px
+        .form-label
+            margin-bottom: 0.5rem
+            font-size: 0.8rem
+        // .form-input
+        //    margin-right: 20p
+        
+        .form-input, .form-textarea
+            background: none
+            border: none
+            border-bottom: 2px solid #141613
+            color: inherit
+        
+        .form-textarea
+            resize: none//no cambia tañaño
+            border: 2px solid #141613
+            flex-basis: 100px //alto determinado para algo dentro de un flex
+
+        .form-submit
+            width: 40%
+            background: #141613
+            color: #fff
+            border: none
+            padding: 0.5rem
+            border-radius: 5px
+            text-transform: capitalize
+
